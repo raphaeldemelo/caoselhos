@@ -4,12 +4,10 @@ import {
     Container,
 } from './styles';
 
-import Balao from '../../components/Balao';
-
-export default function Home() {
+export default function Balao() {
     return (
         <Container>
-            <Balao />
+            <h1>balão de conversa do cachorro</h1>
         </Container>
     );
 }
