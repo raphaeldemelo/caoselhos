@@ -7,7 +7,7 @@ import {
 export default function Home() {
     return (
         <Container>
-            <h1>página home</h1>
+            
         </Container>
     );
 }
