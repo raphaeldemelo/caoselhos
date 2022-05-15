@@ -8,6 +8,7 @@ display: flex;
 padding: 30px;
 align-items: center;
 justify-content: space-between;
+position: absolute;
 `;
 
 export const Logo = styled.img`
