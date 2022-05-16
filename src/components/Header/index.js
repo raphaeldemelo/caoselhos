@@ -3,15 +3,20 @@ import React from 'react';
 import {
     Container,
     Logo,
+    Icone,
 } from './styles';
 
-import Patas from '../../assets/patas.svg';
+import Patinhas from '../../assets/patinha.svg';
+import logo from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
         <Container>
-            <h1>Cãoselhos.pets</h1>
-            <Logo src={Patas} />
+            <Link to='/'>
+                <Logo src={logo}/>
+            </Link>
+            <Icone src={Patinhas} />
         </Container>
     );
 }
