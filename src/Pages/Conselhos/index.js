@@ -13,6 +13,7 @@ import {
     Autor,
     AreaBotao,
     Botao,
+    Titulo,
 } from './styles';
 
 export default function Conselhos() {
@@ -37,7 +38,7 @@ export default function Conselhos() {
             <Content>
                 <SectionEsquerda>
                     <div>
-                        <h1><span style={{ color: '#ff30ff' }}>"</span>{conselho.advice}<span style={{ color: '#ff30ff' }}>"</span></h1>
+                        <Titulo><span style={{ color: '#ff30ff' }}>"</span>{conselho.advice}<span style={{ color: '#ff30ff' }}>"</span></Titulo>
                         <Autor><span style={{ color: '#ff30ff', marginRight: 10 }}>-</span>Cão</Autor>
                         <AreaBotao onClick={atualizarPagina}>
                             <Link to='/conselhos' refresh={true}>
