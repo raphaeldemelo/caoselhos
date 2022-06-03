@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import wallpaper from '../../assets/wallpapr.jpg';
-import cao_1 from '../../assets/cao_1.jpg';
 
 export const Container = styled.div`
 background-image: url(${wallpaper});
@@ -25,12 +24,12 @@ export const Content = styled.div`
   overflow: hidden;
   border-radius: 30px;
 
-:before {
+ :before {
   content: '';
   position: absolute;
-  width: 110%;
-  height: 90%;
+  width: 100%;
   background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
 }
@@ -48,25 +47,27 @@ export const Content = styled.div`
 :after {
   content: '';
   position: absolute;
-  background-size: cover;
+  background: #07182E;
   ;
   inset: 5px;
+  border-radius: 15px;
 }  
 `;
 
 export const SectionEsquerda = styled.div`
 display: flex;
-flex: 2;
 background-color: #07182E;
-width: 100%;
+width: 50%;
 height: 98%;
 align-items: center;
 justify-content: center;
 z-index: 1;
 margin-left: 5px;
-border-top-left-radius: 25px;
+border-top-left-radius: 30px;
 border-bottom-left-radius: 25px;
 padding: 40px;
+
+
 `;
 
 export const SectionDireita = styled.div`
@@ -79,9 +80,13 @@ border-radius: 8px;
 align-items: center;
 justify-content: center;
 z-index: 1;
+
+@media (max-width: 768px) {
+  display: none;
+}
 `;
 
-export const Imagem  = styled.img`
+export const Imagem = styled.img`
 width: 100%;
 background-size: cover;
 `;

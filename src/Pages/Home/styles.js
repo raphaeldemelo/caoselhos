@@ -25,6 +25,8 @@ export const Content = styled.div`
   overflow: hidden;
   border-radius: 20px;
   justify-content: space-around;
+  flex-wrap: wrap;
+
 
 :before {
   content: '';
@@ -51,7 +53,7 @@ export const Content = styled.div`
   position: absolute;
   background-image: url(${cao_1});
   background-size: cover;
-
+  background-position: center center;
   ;
   inset: 5px;
   border-radius: 15px;
@@ -65,6 +67,10 @@ font-size: 50px;
 color: #fff;
 font-weight: 700;
 z-index: 1;
+
+@media (max-width: 768px){
+  font-size: 20px;
+}
 `;
 
 export const AreaBotao = styled.div`
